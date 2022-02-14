@@ -1,15 +1,12 @@
 <template>
     <div>
-        <button @click="clickHandle" v-directive:argument.modifier="'value' + 'expression'">Click me</button>
+        <input v-input-pattern:argument.modifier="/asd/" type="text"/>
     </div>
 </template>
 
 <script>
 export default {
     methods: {
-        clickHandle() {
-            this.$test('asd')
-        }
     }
 }
 </script>
