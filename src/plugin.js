@@ -1,5 +1,5 @@
-import TestComponent from './Test.vue'
-import store from './store.ts'
+// import TestComponent from './Test.vue'
+// import store from './store.ts'
 import directive from './directive.ts'
 
 const Test = {
@@ -8,19 +8,19 @@ const Test = {
 
         this.installed = true
 
-        Vue.component('test', TestComponent)
+        // Vue.component('test', TestComponent)
 
-        console.log('install options', options)
+        // console.log('install options', options)
 
-        const Test = params => {
-            store.dispatch('test', params)
-            console.log('test params', params)
-        }
+        // const Test = params => {
+        //     store.dispatch('test', params)
+        //     console.log('test params', params)
+        // }
 
         Vue.directive('directive', directive)
 
-        Vue.prototype['$test'] = Test
-        Vue['test'] = Test
+        // Vue.prototype['$test'] = Test
+        // Vue['test'] = Test
     }
 }
 

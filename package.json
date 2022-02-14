@@ -1,8 +1,8 @@
 {
-  "name": "vue-package-template",
+  "name": "vue-input-pattern-directive",
   "author": "ColdHands",
-  "version": "1.0.13",
-  "description": "Vue package template",
+  "version": "1.0.11",
+  "description": "Vue directive for patterning inputs",
   "main": "./dist/bundle.js",
   "license": "MIT",
   "publishConfig": {
