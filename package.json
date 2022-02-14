@@ -1,0 +1,73 @@
+{
+  "name": "vue-package-template",
+  "author": "ColdHands",
+  "version": "1.0.13",
+  "description": "Vue package template",
+  "main": "./dist/bundle.js",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@colthands"
+  },
+  "keywords": [
+    "keyword"
+  ],
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "vue"
+    ],
+    "transform": {
+      ".*\\.(js)$": "babel-jest",
+      ".*\\.(vue)$": "vue-jest"
+    },
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/src/$1"
+    },
+    "collectCoverage": false,
+    "collectCoverageFrom": [
+      "**/*.{js,vue}",
+      "!**/node_modules/**"
+    ]
+  },
+  "scripts": {
+    "start": "webpack serve --mode=development",
+    "build": "webpack --mode=production",
+    "save": "git status && git add . && git commit -m save && git push",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "@vue/test-utils": "^1.0.4",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^27.4.5",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^6.5.1",
+    "file-loader": "^6.2.0",
+    "jest": "^27.4.5",
+    "sass": "^1.45.0",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1",
+    "terser-webpack-plugin": "^5.3.0",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.4",
+    "vue": "^2.6.11",
+    "vue-jest": "^3.0.6",
+    "vue-loader": "^15.9.8",
+    "vue-template-compiler": "^2.6.11",
+    "vuex": "^3.6.2",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.6.0",
+    "yargs": "^17.3.0"
+  },
+  "dependencies": {
+    "source-map-loader": "^3.0.1"
+  }
+}
